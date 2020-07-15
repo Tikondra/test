@@ -1,0 +1,63 @@
+.about {
+  @include padding-mob;
+}
+
+.about__title {
+  font-size: 27px;
+  line-height: 35px;
+  color: #000000;
+}
+
+.about__black {
+  font-size: 18px;
+  line-height: 24px;
+  color: #040404;
+}
+
+.about__quote {
+  padding-left: 15px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 23px;
+  color: #000000;
+  border-left: 3px solid #ED5E42;
+}
+
+.about__quote-author {
+  padding-left: 15px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .about {
+    padding: 0 50px;
+  }
+
+  .about__title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .about__black {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .about__quote,
+  .about__quote-author {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about {
+    @include container;
+  }
+
+  .about__title {
+    margin-top: 0;
+  }
+}

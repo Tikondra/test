@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  align-items: flex-end;
+  background-color: #000;
+  min-height: 92px;
+}
+
+.footer__copyright {
+  p {
+    padding: 20px;
+    margin: 0;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    margin-top: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    min-height: 57px;
+  }
+
+  .footer__copyright {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+
+    p {
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.where {
+  @include padding-mob;
+  padding-bottom: 30px;
+}
+
+.where__list {
+  @include list;
+  padding: 15px 0;
+}
+
+.where__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  svg {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+  }
+}
+
+.where__item-title {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.where__underline {
+  text-decoration: underline;
+}
+
+.where__attention {
+  position: relative;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: -12px;
+    width: 51px;
+    height: 3px;
+    background-color: #ED5E42;
+  }
+
+  &::after {
+    height: 2px;
+    top: auto;
+    left: 0;
+    bottom: -12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .where {
+    @include padding-pl;
+  }
+
+  .where__item {
+
+    svg {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .where {
+    @include container;
+  }
+}

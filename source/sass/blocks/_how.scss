@@ -1,0 +1,15 @@
+.how {
+  @include padding-mob;
+}
+
+@media (min-width: 768px) {
+  .how {
+    @include padding-pl;
+  }
+}
+
+@media (min-width: 1024px) {
+  .how {
+    @include container;
+  }
+}

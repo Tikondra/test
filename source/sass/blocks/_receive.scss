@@ -1,0 +1,44 @@
+.receive {
+  @include padding-mob;
+}
+
+.receive__subtitle {
+  font-size: 20px;
+  line-height: 26px;
+  color: #040404;
+}
+
+.receive__list {
+  @include list;
+}
+
+.receive__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.receive__item-title {
+  width: 80%;
+  margin-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .receive {
+    @include padding-pl;
+  }
+
+  .receive__item {
+
+    svg {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .receive {
+    @include container;
+  }
+}

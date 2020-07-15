@@ -1,0 +1,27 @@
+@mixin list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin container {
+  max-width: 840px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+@mixin padding-mob {
+  padding: 0 15px;
+}
+
+@mixin padding-pl {
+  padding: 0 50px;
+}

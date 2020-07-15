@@ -1,0 +1,27 @@
+.social {
+  @include list;
+  display: flex;
+}
+
+.social__item {
+  margin-left: 12px;
+}
+
+.social__link {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+@media (min-width: 768px) {
+  .social__link {
+    width: 40px;
+    height: 40px;
+
+    svg {
+      width: 40px;
+      height: 40px;
+      fill: #FF9E27;
+    }
+  }
+}

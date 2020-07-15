@@ -1,0 +1,32 @@
+.stages {
+  @include padding-mob;
+}
+
+.stages__list {
+  @include list;
+  padding: 20px 0;
+}
+
+.stages__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.stages__item-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .stages {
+    @include padding-pl;
+  }
+}
+
+@media (min-width: 1024px) {
+  .stages {
+    @include container;
+  }
+}

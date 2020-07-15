@@ -1,0 +1,36 @@
+.results {
+  @include padding-mob;
+}
+
+.results__list {
+  @include list;
+}
+
+.results__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.results__item-title {
+  width: 82%;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.results__text-underline {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .results {
+    @include padding-pl;
+  }
+}
+
+@media (min-width: 1024px) {
+  .results {
+    @include container;
+  }
+}

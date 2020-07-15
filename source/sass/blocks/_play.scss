@@ -1,0 +1,35 @@
+.play {
+  padding: 20px 15px 40px;
+}
+
+.play__btn {
+  display: block;
+  padding: 10px 15px 9px;
+  background-color: #ED5E42;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .play {
+    padding: 20px 50px 40px;
+  }
+
+  .play__btn {
+    padding: 11px 15px 11px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .play {
+    @include container;
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+}

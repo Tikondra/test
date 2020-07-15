@@ -1,0 +1,28 @@
+.winners__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #040404;
+}
+
+.winners__list {
+  @include list;
+}
+
+.winners__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.winners__item-title {
+  width: 80%;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .winners__title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
